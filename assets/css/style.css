@@ -6,3 +6,8 @@ header {
     color: white;
     background-color: #0d67b5
 }
+
+.carousel-inner > .carousel-item {
+    max-height: 75vh;
+
+}
