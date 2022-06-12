@@ -2,12 +2,22 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-header {
+header,
+#our_promise {
     color: white;
     background-color: #0d67b5
 }
 
-.carousel-inner > .carousel-item {
+.carousel-inner>.carousel-item {
     max-height: 75vh;
 
+}
+
+#services-icon {
+    color: #0d67b5;
+}
+
+#our_promise,
+#our_services {
+    min-height: 50vh;
 }
