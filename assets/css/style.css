@@ -18,6 +18,28 @@ header,
 }
 
 #our_promise,
-#our_services {
+#our_services,
+#our_partners {
     min-height: 50vh;
+}
+
+#our_partners {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#our_partners img {
+    display: inline-block;
+    max-width: 85%;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+#our_partners img:hover {
+    filter: none;
+    transform: scale(1.2);
+    -webkit-filter: none;
+    -moz-filter: none;
 }
