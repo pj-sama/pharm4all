@@ -43,3 +43,7 @@ header,
     -webkit-filter: none;
     -moz-filter: none;
 }
+#pharmfooter{
+    filter: invert(48%) sepia(6%) saturate(659%) hue-rotate(167deg) brightness(91%) contrast(88%);
+    color: #6c757d;
+};
