@@ -2,24 +2,33 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-header{
+header,
+#our_promise {
     color: white;
     background-color: #0d67b5
 }
 
 #our_team {
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 #team_member{
-    color: white;
-    background-color: #0d67b5;
-    border-top: 6px solid white;
+    color: black;
+}
+#team_member i {
+    color: gray;
+}
+#team_member i:hover {
+    color: #0d67b5;
+    transform: scale(1.2);
+
 }
 
-.socials {
-    background-color: white;
-    color: #0d67b5;
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url('../img/img_parallax.jpg') no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
