@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Promise from '../components/Promise/Promise'
+import Team from '../components/Team/Team'
 function About() {
   return (
-    <div>About</div>
+    <div>
+        <Promise />
+        <Team />
+    </div>
   )
 }
 
