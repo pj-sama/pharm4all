@@ -13,11 +13,11 @@ function Footer() {
     <Container>
           <footer class="py-3 my-4 text-muted">
             <Nav className="justify-content-center border-bottom pb-3 mb-3">
-                <NavItem><NavLink><a href="about.html" class="nav-link px-2 text-muted">About Us</a></NavLink></NavItem>
-                <NavItem><NavLink><a href="/" class="nav-link px-2 text-muted">Locations</a></NavLink></NavItem>
-                <NavItem><NavLink><a href="/" class="nav-link px-2 text-muted">Availability Checker</a></NavLink></NavItem>
-                <NavItem><NavLink><a href="/" class="nav-link px-2 text-muted">Med Info</a></NavLink></NavItem>
-                <NavItem><NavLink><a href="/" class="nav-link px-2 text-muted">Login</a></NavLink></NavItem>
+                <NavItem><NavLink><a href="/About" class="nav-link px-2 text-muted">About Us</a></NavLink></NavItem>
+                <NavItem><NavLink><a href="/Locations" class="nav-link px-2 text-muted">Locations</a></NavLink></NavItem>
+                <NavItem><NavLink><a href="/AvailabilityChecker" class="nav-link px-2 text-muted">Availability Checker</a></NavLink></NavItem>
+                <NavItem><NavLink><a href="/MedInfo" class="nav-link px-2 text-muted">Med Info</a></NavLink></NavItem>
+                <NavItem><NavLink><a href="/Login" class="nav-link px-2 text-muted">Login</a></NavLink></NavItem>
             </Nav>
               <div class="d-flex justify-content-between">
                   <span class="text-center text-muted">© 2022 Pharm4All</span>
