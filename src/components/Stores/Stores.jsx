@@ -1,11 +1,6 @@
 import React, { useState} from 'react'
-import { Button, CloseButton, ListGroup, ListGroupItem, Modal, ModalDialog, ModalHeader } from 'react-bootstrap'
 
 function Stores() {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
   return (
     <div>
           <div class="list-group">
