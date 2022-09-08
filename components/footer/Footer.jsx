@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'next/link';
 // React-boostrap components
 import Container from 'react-bootstrap/Container';
 import Nav  from 'react-bootstrap/Nav'
@@ -27,11 +28,11 @@ function Footer() {
                     <div className="d-flex justify-content-between">
                         <span className="text-center text-muted">© 2022 Pharm4All</span>
                         <ul className="nav list-unstyled d-flex">
-                            <li className="ms-3"><a className="text-muted" href="/"><FontAwesomeIcon icon={faTwitter} /></a>
+                            <li className="ms-3"><Link className="text-muted" href="/"><FontAwesomeIcon icon={faTwitter} /></Link>
                             </li>
-                            <li className="ms-3"><a className="text-muted" href="/"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <li className="ms-3"><Link className="text-muted" href="/"><FontAwesomeIcon icon={faInstagram} /></Link>
                             </li>
-                            <li className="ms-3"><a className="text-muted" href="/"><FontAwesomeIcon icon={faFacebookF} /></a>
+                            <li className="ms-3"><Link className="text-muted" href="/"><FontAwesomeIcon icon={faFacebookF} /></Link>
                             </li>
                         </ul>
                     </div>
