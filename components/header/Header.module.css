@@ -1,4 +1,7 @@
-#nav-bar {
+.navbar {
     color: white;
     background-color: #0d67b5
+}
+.navlogo {
+    height: 50px;
 }
