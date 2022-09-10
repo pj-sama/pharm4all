@@ -53,6 +53,21 @@ body {
 
 }
 
+#our_team {
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+#team_member{
+    color: black;
+}
+#team_member i {
+    color: gray;
+}
+#team_member i:hover {
+    color: #0d67b5;
+    transform: scale(1.2);
+
+}
+
 .blue-bg {
     color: white;
     background-color: #0d67b5

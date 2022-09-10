@@ -1,10 +1,13 @@
 {
   "name": "pharm4all",
   "version": "0.1.0",
+  "homepage": "https://pj-sama.github.io/pharm4all",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "gh-pages": "^4.0.0"
   }
 }

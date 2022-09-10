@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 function PromisePreview() {
@@ -9,7 +10,11 @@ function PromisePreview() {
               obcaecati earum esse vero eaque nesciunt, assumenda suscipit minima voluptas nisi ex nostrum officia
               alias quae. Ipsam, maiores.</p>
         
-            <Button variant="light" className='fs-5'>Find out more</Button>{' '}
+            <Button variant="light" className='fs-5 text-black'>
+                <Link href='/About' className='text-muted'>
+                    Find out more
+                </Link>
+            </Button>{' '}
         </Container>
     </div>
   )
