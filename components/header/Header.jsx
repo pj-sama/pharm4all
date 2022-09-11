@@ -1,7 +1,8 @@
 import React from "react";
 import { Container , Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import styles from './Header.module.css';
+
+import styles from '../../styles/Header.module.css';
 
 import Image from "next/image";
 
