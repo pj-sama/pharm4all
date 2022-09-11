@@ -2,7 +2,7 @@ import React from 'react'
 
 function Promise() {
   return (
-    <section id="our_promise">
+    <section id="our_promise" className='blue-bg'>
         <div className="container-md py-5 d-flex flex-column align-items-center justify-content-center text-center">
             <h2 className="display-5">About Us</h2>
             <span className="quote  fs-3 fst-italic"> What makes us special</span>
