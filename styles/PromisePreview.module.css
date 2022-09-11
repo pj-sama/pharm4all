@@ -1,0 +1,18 @@
+#promise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+#findoutmore:link { text-decoration: none; }
+
+
+#findoutmore:visited { text-decoration: none; }
+
+
+#findoutmore:hover { text-decoration: none; }
+
+
+#findoutmore:active { text-decoration: none; }
