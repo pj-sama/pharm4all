@@ -1,0 +1,21 @@
+#partners {
+    min-height: 50vh;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#partnersimg {
+    display: inline-block;
+    max-width: 85%;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+#partnersimg:hover {
+    filter: none;
+    transform: scale(1.2);
+    -webkit-filter: none;
+    -moz-filter: none;
+}
