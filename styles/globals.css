@@ -9,50 +9,6 @@ body {
 
 }
 
-#services {
-    min-height: 50vh;
-}
-
-#services-icon {
-    color: #0d67b5;
-}
-
-#our_partners {
-    min-height: 50vh;
-}
-
-#our_partners {
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-#our_partners img {
-    display: inline-block;
-    max-width: 85%;
-    padding: 15px 0;
-    transition: all 0.3s ease-in-out;
-    -webkit-filter: grayscale(100);
-    -moz-filter: grayscale(100);
-    filter: grayscale(100);
-}
-#our_partners img:hover {
-    filter: none;
-    transform: scale(1.2);
-    -webkit-filter: none;
-    -moz-filter: none;
-}
-
-#our_promise {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-    color: white;
-    background-color: #0d67b5
-
-}
-
 #our_team {
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
