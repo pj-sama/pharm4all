@@ -1,53 +1,54 @@
-import Image from 'next/image'
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 
-import car_img_1 from '/public/images/carousel/carousel_1.jpg'
+// import car_img_1 from './images/carousel/carousel_1.jpg'
 import car_img_2 from '/public/images/carousel/carousel_2.jpg'
 import car_img_3 from '/public/images/carousel/carousel_3.jpg'
 
-import styles from './Slideshow.module.css'
+import styles from '../../styles/Slideshow.module.css'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 
 function Slideshow() {
     return (
         <>
-            <Carousel >
-                <Carousel.Item>
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <SwiperSlide>
                     <Image 
-                        className='d-block w-100'
-                        layout='responsive' 
-                        src={car_img_1} 
-                        alt='...'
+                        src='/images/carousel/carousel_1.jpg' 
+                        layout="responsive" 
+                        alt='Carousel image'
+                        height={'7 vh'} 
+                        className={styles.img}
                     />
-                    <Carousel.Caption>
-                        <h5 className='display-3'>Slide Label</h5>
-                        <p className='display-6'>Some text describing the content on this slide</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                     <Image 
-                        className='d-block w-100'
-                        layout='responsive' 
-                        src={car_img_2} 
-                        alt='...'/>
-                    <Carousel.Caption>
-                        <h5 className='display-3'>Slide Label</h5>
-                        <p className='display-6'>Some text describing the content on this slide</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
+                        src='/images/carousel/carousel_2.jpg' 
+                        layout="responsive" 
+                        alt='Carousel image' 
+                        className={styles.img} 
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
                     <Image 
-                    className='d-block w-100' 
-                    layout='responsive'
-                    src={car_img_3} 
-                    alt='...'/>
-                    <Carousel.Caption>
-                        <h5 className='display-3'>Slide Label</h5>
-                        <p className='display-6'>Some text describing the content on this slide</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                        src='/images/carousel/carousel_3.jpg'
+                        layout="responsive" 
+                        alt='Carousel image' 
+                        className={styles.img}
+                    />
+                </SwiperSlide>
+            </Swiper>
         </>
 
     )
