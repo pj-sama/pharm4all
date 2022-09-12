@@ -1,52 +1,70 @@
 import React from 'react'
-import { Carousel, Image } from 'react-bootstrap'
 
-// import car_img_1 from './images/carousel/carousel_1.jpg'
+import Image from 'next/image';
+
+import car_img_1 from '/public/images/carousel/carousel_1.jpg'
 import car_img_2 from '/public/images/carousel/carousel_2.jpg'
 import car_img_3 from '/public/images/carousel/carousel_3.jpg'
 
-import styles from '../../styles/Slideshow.module.css'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
+import styles from '../../styles/Slideshow.module.css'
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 function Slideshow() {
     return (
         <>
             <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                cssMode={true}
+                navigation={true}
+                pagination={true}
+                mousewheel={true}
+                keyboard={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                className={styles.mySwiper}
             >
-                <SwiperSlide>
+                <SwiperSlide className={styles.mySlide}>
                     <Image 
-                        src='/images/carousel/carousel_1.jpg' 
-                        layout="responsive" 
-                        alt='Carousel image'
-                        height={'7 vh'} 
-                        className={styles.img}
+                        src={car_img_1} 
+                        alt='A slide'
+                        className={styles.carouselimg}
+                        layout='responsive'
                     />
+                    <div className={styles.carouselcaption}>
+                        <h2 className='display-3'>Slide 1 </h2>
+                        <p className='display-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className={styles.mySlide}>
                     <Image 
-                        src='/images/carousel/carousel_2.jpg' 
-                        layout="responsive" 
-                        alt='Carousel image' 
-                        className={styles.img} 
+                        src={car_img_2} 
+                        alt='A slide' 
+                        className={styles.carouselimg}
                     />
+                    <div className={styles.carouselcaption}>
+                        <h2 className='display-3'>Slide 2 </h2>
+                        <p className='display-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className={styles.mySlide}>
                     <Image 
-                        src='/images/carousel/carousel_3.jpg'
-                        layout="responsive" 
-                        alt='Carousel image' 
-                        className={styles.img}
+                        src={car_img_3} 
+                        alt='A slide' 
+                        className={styles.carouselimg} 
                     />
+                    <div className={styles.carouselcaption}>
+                        <h2 className='display-3'>Slide 3 </h2>
+                        <p className='display-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </>

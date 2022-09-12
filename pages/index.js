@@ -7,7 +7,7 @@ import Slideshow from "../components/slideshow/Slideshow";
 export default function Home() {
     return (
         <>
-            {/* <Slideshow /> */}
+            <Slideshow />
             <Services />
             <PromisePreview />
             <Partners />
