@@ -15,7 +15,7 @@ import { faRepeat } from '@fortawesome/free-solid-svg-icons'
 
 function Services() {
     return (
-        <Container fluid="md" id={styles.services} className='py-5 d-flex flex-column align-items-center justify-content-center text-center'>
+        <Container fluid="lg" id={styles.services} className='py-5 d-flex flex-column align-items-center justify-content-center text-center'>
 		  <Row className='my-5'>
 				<Col md={4}>
 					<h2><FontAwesomeIcon icon={faCalendarCheck} id={styles.servicesicon} /> Availability Checker</h2>
