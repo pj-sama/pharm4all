@@ -10,7 +10,7 @@ import Image from "next/image";
 function Header() {
     return (
         <>
-            <Navbar expand="md" variant="dark" className={styles.navbar}>
+            <Navbar expand="lg" variant="dark" className={styles.navbar}>
                 <Container>
                     <Navbar.Brand href="/">
                         {/* <img alt="" src={logo} height="50" className="d-inline-block align-top"/> */}
