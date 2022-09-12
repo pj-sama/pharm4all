@@ -1,9 +1,9 @@
-.modal-footer {
+.modalfooter {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.modal-title , .modal-body {
-    text-align: center;
+.modaltitle , .modalbody {
+    text-align: center !important;
 }

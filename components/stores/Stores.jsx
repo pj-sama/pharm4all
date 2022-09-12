@@ -8,6 +8,7 @@ import { ListGroup ,  Button , ListGroupItem , Modal , Col , Row} from 'react-bo
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot , faPhone } from '@fortawesome/free-solid-svg-icons'
 
 // Styles
 import styles from '../../styles/Stores.module.css'
@@ -33,9 +34,9 @@ function Stores() {
 
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header>
-					<Modal.Title> <h4>Store Name</h4> </Modal.Title>
+					<Modal.Title  className={styles.modaltitle}> <h4>Store Name</h4> </Modal.Title>
 				</Modal.Header>
-				<Modal.Body>
+				<Modal.Body className={styles.modalbody}>
 					<Row>
 						<Col>Mon-Fri</Col>
 						<Col>09:00-20:00</Col>
@@ -49,12 +50,12 @@ function Stores() {
 						<Col>10:00-16:00</Col>
 					</Row>
 				</Modal.Body>
-				<Modal.Footer>
-					<p className="text-center"><i className="fa-solid fa-phone"></i> 0111 111 111</p>
+				<Modal.Footer className={styles.modalfooter}>
 					<Link href="/">
-                        <p>
-                            <FontAwesomeIcon icon="fa-solid fa-location-dot" /> View on map
-                        </p>
+                        <p> <FontAwesomeIcon icon={faPhone} /> Call this store </p>
+                    </Link>
+					<Link href="/">
+                        <p><FontAwesomeIcon icon={faLocationDot} /> View on map</p>
                     </Link>
 				</Modal.Footer>
 
